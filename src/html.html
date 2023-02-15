@@ -1,0 +1,5 @@
+<mat-form-field>
+  <input matInput formControlName="etatCivil.nom" placeholder="Nom">
+  <mat-error *ngIf="inscriptionForm.get('etatCivil.nom').invalid && (inscriptionForm.get('etatCivil.nom').dirty || inscriptionForm.get('etatCivil.nom').touched)">Le nom est requis.</mat-error>
+</mat-form-field>
+

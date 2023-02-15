@@ -1,0 +1,58 @@
+<mat-card>
+    <mat-card-title>Inscription</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <input matInput placeholder="Nom" formControlName="nom">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Prénom" formControlName="prenom">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Date de naissance" formControlName="dateNaissance">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Lieu de naissance" formControlName="lieuNaissance">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Adresse" formControlName="adresse">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Code postal" formControlName="codePostal">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Ville" formControlName="ville">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Pays" formControlName="pays">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Profession</mat-label>
+                <mat-select formControlName="profession">
+                    <mat-option value="Etudiant(e)">Étudiant(e)</mat-option>
+                    <mat-option value="Employé(e)">Employé(e)</mat-option>
+                    <mat-option value="Travailleur indépendant(e)">Travailleur indépendant(e)</mat-option>
+                    <mat-option value="Autre">Autre</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Secteur d'activité</mat-label>
+                <mat-select formControlName="secteurActivite">
+                    <mat-option value="Agriculture">Agriculture</mat-option>
+                    <mat-option value="Industrie">Industrie</mat-option>
+                    <mat-option value="Services">Services</mat-option>
+                    <mat-option value="Autre">Autre</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Niveau d'études</mat-label>
+                <mat-select formControlName="niveauEtudes">
+                    <mat-option value="Ecole primaire">École primaire</mat-option>
+                    <mat-option value="College/Lycee">Collège/lycée</mat-option>
+                    <mat-option value="Universite">Université</mat-option>
+                    <mat-option value="Autre">Autre</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Numéro de téléphone" formControlName="telephone">
+                </mat-form
